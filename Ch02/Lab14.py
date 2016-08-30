@@ -1,4 +1,4 @@
-x1, y1, x2, y2, x3, y3 = eval(input("Enter three pofloats for a triangle: "))
+x1, y1, x2, y2, x3, y3 = eval(input("Enter three points for a triangle: "))
 
 # x1, y1, x2, y2, x3, y3 = 1.5, -3.4, 4.6, 5, 9.5, -3.4
 
