@@ -1,0 +1,38 @@
+import turtle
+
+turtle.circle(100)
+turtle.penup()
+turtle.goto(0,125)
+turtle.pendown()
+turtle.right(72)
+turtle.forward(72)
+turtle.penup()
+turtle.goto(0,125)
+turtle.pendown()
+turtle.right(40)
+# turtle.left(72)
+turtle.forward(72)
+
+
+turtle.penup()
+turtle.goto(0,25)
+turtle.pendown()
+turtle.right(80)
+turtle.forward(45)
+turtle.penup()
+turtle.goto(0,25)
+turtle.pendown()
+turtle.right(180)
+turtle.left(46)
+turtle.forward(45)
+
+turtle.penup()
+turtle.goto(-50,130)
+turtle.pendown()
+turtle.dot(30, "red")
+turtle.penup()
+turtle.goto(50,130)
+turtle.pendown()
+turtle.dot(30, "red")
+
+turtle.done()
