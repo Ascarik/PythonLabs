@@ -1,36 +1,14 @@
-import time
+import math
 
-timeSoze = int(input("Enter the time zone offset to GMT: "))
-
-currentTime = time.time()  # Get current time currentTime
-
-# Obtain the total seconds since midnight, Jan 1, 1970
-totalSeconds = int(currentTime)
-
-# Get the current second
-currentSecond = totalSeconds % 60
-
-# Obtain the total minutes
-totalMinutes = totalSeconds // 60
-
-# Compute the current minute in the hour
-currentMinute = totalMinutes % 60
-
-# Obtain the total hours
-totalHours = totalMinutes // 60
-
-totalHours += timeSoze
-
-# Compute the current hour
-currentHour = totalHours % 24
+x1, y1, radius1 = eval(input("Enter circle1's center x-, y-coordinates, and radius: "))
+x2, y2, radius2 = eval(input("Enter circle2's center x-, y-coordinates, and radius: "))
 
 
-timeOfDay = "AM"
-if currentHour > 12 :
-    currentHour -= 12
-    timeOfDay = "PM"
+distance = ((x2 - x1)**2 + (y2 - y1)**2)**0.5
 
-
-
-# Display results
-print("Current time is", currentHour, ":", currentMinute, ":", currentSecond, timeOfDay)
+if distance <= math.fabs(radius1 -radius2):
+    print("circle2 is inside circle1")
+elif distance <= math.fabs(radius1 + radius2):
+    print("circle2 overlaps circle1")
+else:
+    print("circle2 does not overlap circle1")
