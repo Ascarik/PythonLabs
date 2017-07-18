@@ -25,7 +25,8 @@ for t in range(1, 13):
 
     h = int(h)
 
-    h = 7 if h == 0 else h
+    if h == 0 or h == 1:
+        h = 7 - h
 
     if m == 3:
         nameOfMonth = "March"
