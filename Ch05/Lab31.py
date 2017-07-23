@@ -12,10 +12,6 @@ for t in range(1, 13):
         month += 12
         year -= 1
 
-    if month < 3:
-        month += 12
-        year -= 1
-
     j = year // 100
     k = year % 100
 
