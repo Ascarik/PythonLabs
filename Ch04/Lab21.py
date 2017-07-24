@@ -3,18 +3,17 @@ month = int(input("Enter month: 1-12: "))
 dayOfMonth = int(input("Enter the day of the month: 1-31: "))
 
 q = dayOfMonth
+
+if month < 3:
+    month += 12
+    year -= 1
+
 j = year // 100
 k = year % 100
 
-if month <3 :
-    month += 12
-    year-=1
-
-
 m = month
 
-
-h = (q + ((26 * (m + 1)) / 10) + k + k / 4 + j / 4 + 5*j) % 7
+h = (q + ((26 * (m + 1)) / 10) + k + k / 4 + j / 4 + 5 * j) % 7
 
 h = int(h)
 
