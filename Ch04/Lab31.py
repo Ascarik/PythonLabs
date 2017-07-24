@@ -7,4 +7,4 @@ if result > 0:
 elif result < 0:
     print("p2 is on the right side of the line from p0 to p1")
 else:
-    print("p2 is on the same linefrom p0 to p1")
+    print("p2 is on the same line from p0 to p1")
