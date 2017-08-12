@@ -41,7 +41,8 @@ def isValid(number):
     return total % 10 == 0
 
 
-print("Card number1 " + str(4388576018402626) + " is", end=" ")
-print(isValid(4388576018402626))
-print("Card number1 " + str(4388576018410707) + " is", end=" ")
-print(isValid(4388576018410707))
+if __name__ == '__main__':
+    print("Card number1 " + str(4388576018402626) + " is", end=" ")
+    print(isValid(4388576018402626))
+    print("Card number1 " + str(4388576018410707) + " is", end=" ")
+    print(isValid(4388576018410707))
