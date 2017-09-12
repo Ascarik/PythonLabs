@@ -18,7 +18,6 @@ class Lab11:
         seconds = int(time.second)
         self.create_watch()
         self.create_hands(hour, minutes, seconds)
-        print(hour, minutes, seconds)
 
         window.mainloop()
 
