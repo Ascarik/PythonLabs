@@ -33,12 +33,6 @@ class Lab15_16:
             else:
                 i += 1
 
-
-
-
-                # canvas.bind("<Key>", self.move)
-        # canvas.focus_set()
-
         window.mainloop()
 
 
